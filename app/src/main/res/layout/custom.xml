@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/MerahMuda">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keterangan_custom"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/font_30sp"
+        android:textColor="@color/Merah"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/Merah"
+        android:textSize="@dimen/font_20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dialogButtonKembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kembali"
+            android:layout_margin="5dp"
+            android:onClick="dialog_Kembali"
+            android:textSize="@dimen/font_20sp"
+            android:textColor="@color/Putih"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner"
+            />
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:layout_margin="5dp"
+            android:onClick="dialog_Ok"
+            android:textSize="@dimen/font_20sp"
+            android:textColor="@color/Putih"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/MerahMuda"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/makanan"
+        android:textAlignment="center"
+        android:background="@color/Merah"
+        android:textColor="@color/MerahMuda"
+        android:textSize="@dimen/font_40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="left"
+                android:text="@string/okonomiyaki"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="left"
+                android:text="@string/takoyaki"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="@string/sepuluhribu"
+                android:gravity="right"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="@string/sepuluhribu"
+                android:gravity="right"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/minuman"
+        android:textAlignment="center"
+        android:background="@color/Merah"
+        android:textColor="@color/MerahMuda"
+        android:textSize="@dimen/font_40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="left"
+                android:text="@string/teh"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="left"
+                android:text="@string/green"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="@string/limaribu"
+                android:gravity="right"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="@string/limaribu"
+                android:gravity="right"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/pesan"
+        android:textColor="@color/Putih"
+        android:textSize="@dimen/font_20sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:onClick="onClickPesan2"/>
+</LinearLayout>

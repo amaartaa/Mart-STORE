@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/MerahMuda">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/keterangan_tab2"
+        android:textColor="@color/Merah"
+        android:textSize="@dimen/font_25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/food_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/martLogo"
+                android:src="@drawable/food_logo"
+                app:civ_border_color="@color/Merah"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/makanan"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_makanan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/jml_makanan"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_min_makanan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle"
+                    android:onClick="OnClickMinMakanan"
+                    android:text="@string/minus"
+                    android:textAlignment="center"
+                    android:textColor="@color/Putih"
+                    android:textSize="@dimen/font_25sp" />
+
+                <TextView
+                    android:id="@+id/jumlah_makanan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="@color/MerahTua"
+                    android:textSize="@dimen/font_40sp" />
+
+                <Button
+                    android:id="@+id/btn_plus_makanan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle"
+                    android:onClick="OnClickPlusMakanan"
+                    android:text="@string/plus"
+                    android:textAlignment="center"
+                    android:textColor="@color/Putih"
+                    android:textSize="@dimen/font_25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/drink_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/martLogo"
+                android:src="@drawable/drink_logo"
+                app:civ_border_color="@color/Merah"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/minuman"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_minuman"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/jml_minuman"
+                android:textColor="@color/Merah"
+                android:textSize="@dimen/font_20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_min_minuman"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle"
+                    android:onClick="OnClickMinMinuman"
+                    android:text="@string/minus"
+                    android:textAlignment="center"
+                    android:textColor="@color/Putih"
+                    android:textSize="@dimen/font_25sp" />
+
+                <TextView
+                    android:id="@+id/jumlah_minuman"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="@color/MerahTua"
+                    android:textSize="@dimen/font_40sp" />
+
+                <Button
+                    android:id="@+id/btn_plus_minuman"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle"
+                    android:onClick="OnClickPlusMinuman"
+                    android:text="@string/plus"
+                    android:textAlignment="center"
+                    android:textColor="@color/Putih"
+                    android:textSize="@dimen/font_25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/total_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="#d7d7d7"
+        android:gravity="center"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        android:textColor="@color/Merah"
+        android:textSize="@dimen/font_20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:onClick="onClickReset"
+            android:text="@string/reset"
+            android:textColor="@color/Putih"
+            android:textSize="@dimen/font_20sp" />
+
+        <Button
+            android:id="@+id/btn_order"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:onClick="onClickOrder"
+            android:text="@string/order"
+            android:textColor="@color/Putih"
+            android:textSize="@dimen/font_20sp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

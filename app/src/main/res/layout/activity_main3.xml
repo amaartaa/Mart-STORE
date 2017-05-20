@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/MerahMuda">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/TV_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/keterangan_tab3"
+            android:textSize="@dimen/font_30sp"
+            android:textColor="@color/Merah"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Merah"
+            android:layout_marginTop="10dp"
+            android:text="@string/AN"
+            android:textSize="@dimen/font_20sp"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/MerahTua"
+            android:id="@+id/AN"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Merah"
+            android:layout_marginTop="10dp"
+            android:text="@string/no_meja"
+            android:textSize="@dimen/font_20sp"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/MerahTua"
+            android:id="@+id/no_meja"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Merah"
+            android:layout_marginTop="10dp"
+            android:text="@string/pilihan"
+            android:textSize="@dimen/font_20sp"
+            android:layout_marginBottom="10dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/takeaway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Merah"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:onClick="onClickTakeAway"
+                android:textSize="@dimen/font_20sp"
+                android:text="@string/take_away" />
+            <RadioButton
+                android:id="@+id/makansini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="@color/Merah"
+                android:onClick="onClickMakanSini"
+                android:text="@string/makan_sini"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textSize="@dimen/font_20sp"
+            android:textColor="@color/Merah"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/total_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d7d7d7"
+            android:gravity="center"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:textColor="@color/Merah"
+            android:textSize="@dimen/font_20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/batal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:onClick="onClickBatal"
+                android:text="@string/kembali"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/font_20sp"
+                android:textColor="@color/Putih"/>
+
+            <Button
+                android:id="@+id/bayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:onClick="onClickBayar"
+                android:text="@string/bayar"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/font_20sp"
+                android:textColor="@color/Putih"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

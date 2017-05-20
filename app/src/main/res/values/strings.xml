@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MART STORE</string>
+    <string name="welcome">Welcome to Mart!</string>
+    <string name="pesan">Pesan</string>
+    <string name="martLogo">MartLogo</string>
+    <string name="map">Map</string>
+    <string name="share">Share</string>
+    <string name="limaribu">Rp. 5.000</string>
+    <string name="sepuluhribu">Rp. 10.000</string>
+    <string name="takoyaki">Takoyaki</string>
+    <string name="okonomiyaki">Okonomiyaki</string>
+    <string name="teh">Es Teh</string>
+    <string name="green">Greentea</string>
+    <string name="keterangan_tab2">Masukkan Pesanan Anda : </string>
+    <string name="keterangan_tab3">Silahkan bayar pesanan Anda : </string>
+    <string name="keterangan_custom">Silahkan cek pesanan anda :</string>
+    <string name="makanan">Makanan</string>
+    <string name="minuman">Minuman</string>
+    <string name="jml_makanan">Jumlah Makanan</string>
+    <string name="jml_minuman">Jumlah Minuman</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="zero">0</string>
+    <string name="reset">Reset</string>
+    <string name="order">Order</string>
+    <string name="take_away">Take Away</string>
+    <string name="makan_sini">Makan Sini</string>
+    <string name="total">Total :</string>
+    <string name="kembali">Kembali</string>
+    <string name="bayar">Bayar</string>
+    <string name="menu">Menu</string>
+    <string name="ok">Ok</string>
+    <string name="AN">Atas Nama :</string>
+    <string name="pilihan">Pilihan :</string>
+    <string name="no_meja">No. Meja</string>
+</resources>
